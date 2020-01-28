@@ -1,4 +1,4 @@
-using CoinPaprika.Consumer.EndPoints;
+using CoinAPI.Consumer.EndPoints;
 using Microsoft.Extensions.DependencyInjection;
 using Refit;
 using System;
@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CoinPaprika.Consumer.Config
+namespace CoinAPI.Consumer.Config
 {
     public static class EndpointsConfig
     {

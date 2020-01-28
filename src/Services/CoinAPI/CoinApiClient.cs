@@ -1,7 +1,7 @@
 ﻿using CoinAPI.Consumer.Exceptions;
-using CoinPaprika.Consumer.EndPoints;
-using CoinPaprika.Consumer.Interfaces;
-using CoinPaprika.Consumer.Models;
+using CoinAPI.Consumer.EndPoints;
+using CoinAPI.Consumer.Interfaces;
+using CoinAPI.Consumer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,7 +41,7 @@ namespace CoinAPI.Consumer
             {
                 IEnumerable<Coin> coins = await coinEndpoint.GetCoins();
 
-                Coin coin = coins.FirstOrDefault(c => c.AssetId.Equals(coinId, StringComparison.OrdinalIgnoreCase);
+                Coin coin = coins.FirstOrDefault(c => c.AssetId.Equals(coinId, StringComparison.OrdinalIgnoreCase));
 
                 if (coin == null)
                 {

@@ -1,9 +1,9 @@
-﻿using CoinPaprika.Consumer.Config;
-using CoinPaprika.Consumer.Interfaces;
+﻿using CoinAPI.Consumer.Config;
+using CoinAPI.Consumer.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace CoinPaprika.Consumer
+namespace CoinAPI.Consumer
 {
     public static class CoinApiConsumerServiceCollectionExtentions
     {

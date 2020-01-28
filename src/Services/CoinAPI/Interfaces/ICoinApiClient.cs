@@ -1,8 +1,8 @@
-﻿using CoinPaprika.Consumer.Models;
+﻿using CoinAPI.Consumer.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace CoinPaprika.Consumer.Interfaces
+namespace CoinAPI.Consumer.Interfaces
 {
     public interface ICoinApiClient
     {

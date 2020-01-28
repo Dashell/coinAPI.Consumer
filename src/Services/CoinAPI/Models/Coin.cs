@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace CoinPaprika.Consumer.Models
+namespace CoinAPI.Consumer.Models
 {
     public class Coin
     {

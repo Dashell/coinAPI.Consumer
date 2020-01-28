@@ -1,8 +1,8 @@
-﻿using CoinPaprika.Consumer.Models;
+﻿using CoinAPI.Consumer.Models;
 using Refit;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-namespace CoinPaprika.Consumer.EndPoints
+namespace CoinAPI.Consumer.EndPoints
 {
     public interface ICoinEndpoint
     {
