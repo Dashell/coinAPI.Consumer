@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <SignAssembly>false</SignAssembly>
+    <Authors>Dashell</Authors>
+    <Description>Coin Paprika API Consumer for .Net Core 3.1 boilerplate</Description>
+    <PackageTags>dotnetcore api</PackageTags>
+    <NeutralLanguage>English</NeutralLanguage>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+    <Version>0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Refit.HttpClientFactory" Version="5.0.23" />
+  </ItemGroup>
+
+</Project>

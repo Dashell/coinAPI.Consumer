@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoinAPI.Consumer.Tests", "Services\CoinAPI\CoinApi.Tests\CoinAPI.Consumer.Tests.csproj", "{7104B411-CFA2-4771-B282-08AE3AD18E93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoinAPI.Consumer", "Services\CoinAPI\CoinAPI.Consumer.csproj", "{B3769A3D-7C1C-4CCA-B96A-89D457511D01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{CD04640E-EFFC-4CBD-97DB-98E281C8480E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoinAPI", "CoinAPI", "{50EB7DA8-A2BD-46E9-A80F-6AE4E9805D76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoinApi.Tests", "CoinApi.Tests", "{BDACD322-4A10-46B4-8063-1566867D47B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7104B411-CFA2-4771-B282-08AE3AD18E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7104B411-CFA2-4771-B282-08AE3AD18E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7104B411-CFA2-4771-B282-08AE3AD18E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7104B411-CFA2-4771-B282-08AE3AD18E93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3769A3D-7C1C-4CCA-B96A-89D457511D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3769A3D-7C1C-4CCA-B96A-89D457511D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3769A3D-7C1C-4CCA-B96A-89D457511D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3769A3D-7C1C-4CCA-B96A-89D457511D01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7104B411-CFA2-4771-B282-08AE3AD18E93} = {BDACD322-4A10-46B4-8063-1566867D47B4}
+		{B3769A3D-7C1C-4CCA-B96A-89D457511D01} = {50EB7DA8-A2BD-46E9-A80F-6AE4E9805D76}
+		{50EB7DA8-A2BD-46E9-A80F-6AE4E9805D76} = {CD04640E-EFFC-4CBD-97DB-98E281C8480E}
+		{BDACD322-4A10-46B4-8063-1566867D47B4} = {50EB7DA8-A2BD-46E9-A80F-6AE4E9805D76}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25E16767-3213-4A37-B6C4-D34D32CF6A50}
+	EndGlobalSection
+EndGlobal
