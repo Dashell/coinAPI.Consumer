@@ -7,6 +7,6 @@ namespace CoinPaprika.Consumer.Interfaces
     public interface ICoinApiClient
     {
         Task<IEnumerable<Coin>> GetCoinsAsync();
-        Task<Coin> GetCoinAsync();
+        Task<Coin> GetCoinAsync(string coinId);
     }
 }

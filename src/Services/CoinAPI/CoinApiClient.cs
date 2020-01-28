@@ -1,8 +1,10 @@
-﻿using CoinPaprika.Consumer.EndPoints;
+﻿using CoinAPI.Consumer.Exceptions;
+using CoinPaprika.Consumer.EndPoints;
 using CoinPaprika.Consumer.Interfaces;
 using CoinPaprika.Consumer.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,12 +21,43 @@ namespace CoinAPI.Consumer
 
         public async Task<IEnumerable<Coin>> GetCoinsAsync()
         {
-            return await coinEndpoint.GetCoins();
+            try
+            {
+                return await coinEndpoint.GetCoins();
+            }
+            catch (Refit.ApiException apiException)
+            {
+                if (apiException.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                {
+                    throw new AuthenticationFailedException();
+                }
+                throw new Exception("unhandled server exception");
+            }
         }
 
-        public async Task<Coin> GetCoinAsync()
+        public async Task<Coin> GetCoinAsync(string coinId)
         {
-            return await coinEndpoint.GetCoin();
+            try
+            {
+                IEnumerable<Coin> coins = await coinEndpoint.GetCoins();
+
+                Coin coin = coins.FirstOrDefault(c => c.AssetId.Equals(coinId, StringComparison.OrdinalIgnoreCase);
+
+                if (coin == null)
+                {
+                    throw new CoinNotFoundException(coinId);
+                }
+
+                return coin;
+            }
+            catch(Refit.ApiException apiException)
+            {
+                if(apiException.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                {
+                    throw new AuthenticationFailedException();
+                }
+                throw new Exception("unhandled server exception");
+            }
         }
     }
 }
